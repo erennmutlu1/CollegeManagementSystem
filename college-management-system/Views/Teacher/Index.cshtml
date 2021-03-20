@@ -1,0 +1,49 @@
+﻿@model CollegeManagementSystem.ViewModels.Teacher.TeacherListViewModel
+
+@{ ViewBag.Title = "Index"; }
+
+<h2>Teachers registered</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th>Name</th>
+        <th class="text-center">Birthday</th>
+        <th class="text-center">Salary</th>
+        <th class="text-center">Actions</th>
+    </tr>
+
+    @foreach (var item in Model.Teachers)
+    {
+        <tr>
+            <td class="col-md-3">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td class="col-md-1 text-center">
+                @Convert.ToDateTime(item.Birthday).ToString("MM/dd/yyyy")
+            </td>
+            <td class="col-md-1 text-center">
+                @Html.DisplayFor(modelItem => item.Salary)
+            </td>
+            <td class="col-md-1 text-center">
+                <div class="">
+
+                    @Html.ActionLink("Edit", "Edit", new {item.TeacherId}, new {@class = "btn btn-info btn-custom", title = "Edit Teacher"})
+
+                    @using (Html.BeginForm("Delete", "Teacher", FormMethod.Post, new {style = "display: inline"}))
+                    {
+                        <button type="submit" class="btn btn-primary btn-custom" title="Delete Teacher" onclick="return confirm('Do you want to delete this record?')">
+                            Delete
+                        </button>
+                        <input type="hidden" name="TeacherId" value="@item.TeacherId"/>
+                    }
+                </div>
+            </td>
+        </tr>
+    }
+</table>
+
+@section Scripts {
+}

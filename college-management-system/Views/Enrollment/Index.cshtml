@@ -1,0 +1,39 @@
+﻿@model CollegeManagementSystem.ViewModels.Enrollment.EnrollmentListViewModel
+
+@{ ViewBag.Title = "Index"; }
+
+<h2>Students enrolled</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th>Student</th>
+        <th>Subject</th>
+        <th class="text-center">Actions</th>
+    </tr>
+    
+    @foreach (var item in Model.Enrollments)
+    {
+        <tr>
+            <td class="col-md-4">
+                @Html.DisplayFor(modelItem => item.Student.Name)
+            </td>
+            <td class="col-md-2">
+                @Html.DisplayFor(modelItem => item.Subject.Title)
+            </td>
+            <td class="col-md-1 text-center">
+                @*@Html.ActionLink("Edit", "Edit", new {item.EnrollmentId}, new {@class = "btn btn-info btn-action", title = "Edit Enrollment"})*@
+                @Html.ActionLink("Grade", "Create", "Grade", new {item.StudentId, item.SubjectId}, new {@class = "btn btn-info btn-action", title = "Register Grade"})
+                @using (Html.BeginForm("Delete", "Enrollment", FormMethod.Post, new {style = "display: inline"}))
+                {
+                    <button type="submit" class="btn btn-primary btn-action" title="Delete Enrollment" onclick="return confirm('Do you want to delete this record?')">
+                        Delete
+                    </button>
+                    <input type="hidden" name="EnrollmentId" value="@item.EnrollmentId"/>
+                }
+            </td>
+        </tr>
+    }
+</table>
