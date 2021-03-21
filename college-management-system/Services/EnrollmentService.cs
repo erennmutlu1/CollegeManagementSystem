@@ -72,7 +72,7 @@ namespace CollegeManagementSystem.Services
             }
             catch (Exception)
             {
-                throw new Exception("An error occurred when was trying to save the data");
+                throw new Exception("An error occurred while trying to save the data");
             }
         }
 

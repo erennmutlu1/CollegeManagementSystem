@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Magnifinance University</title>
+    <title>@ViewBag.Title - The College Of Space</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,7 +16,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Magnifinance University", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("The College Of Space", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -25,7 +25,7 @@
                     <li>@Html.ActionLink("Subjects", "Index", "Subject")</li>
                     <li>@Html.ActionLink("Teachers", "Index", "Teacher")</li>
                     <li>@Html.ActionLink("Students", "Index", "Student")</li>
-                    <li>@Html.ActionLink("Students enrolled", "Index", "Enrollment")</li>
+                    <li>@Html.ActionLink("Enrollments", "Index", "Enrollment")</li>
                     <li>@Html.ActionLink("Grades", "Index", "Grade")</li>
                 </ul>
             </div>
@@ -35,7 +35,11 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Magnifinance University</p>
+            <div>
+            <span>&copy; @DateTime.Now.Year - The College Of Space</span>
+            <span style="float:right"><strong>Help Desk:</strong>   <a href="mailto:erennmutlu@outlook.com">erennmutlu@outlook.com</a><br /></span>
+
+            </div>
         </footer>
     </div>
 

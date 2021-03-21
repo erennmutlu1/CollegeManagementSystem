@@ -4,7 +4,7 @@ using System.Web.Mvc;
 
 namespace CollegeManagementSystem
 {
-    public class DecimalModelBinder : IModelBinder
+    public class DecimalConfig : IModelBinder
     {
         public object BindModel(ControllerContext controllerContext,
             ModelBindingContext bindingContext)

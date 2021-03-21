@@ -31,7 +31,7 @@ textarea {
 }
 
 .intro {
-    background-image: url('/content/images/logo-magnifinance@2x.png');
+    background-image: url('/Content/Assets/images/logospacee.jpg');
     background-repeat: no-repeat;
     background-position: center center;
         margin-top: 20px;
@@ -40,5 +40,5 @@ textarea {
 }
 
 .space {
-    margin-top: 130px;
+    margin-top: 250px;
 }

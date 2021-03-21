@@ -21,7 +21,7 @@ namespace CollegeManagementSystem.ViewModels.Grade
         [Display(Name = "Grade")]
         public double? GradeValue { get; set; }
 
-        [Display(Name = "Observation")]
+        [Display(Name = "Situation")]
         public string Observation { get; set; }
 
         public IEnumerable<SelectListItem> StudentList { get; set; }

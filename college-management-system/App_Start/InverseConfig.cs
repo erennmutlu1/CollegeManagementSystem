@@ -8,7 +8,7 @@ using CollegeManagementSystem.Repositories;
 
 namespace CollegeManagementSystem
 {
-    public class IoCConfig
+    public class InverseConfig
     {
         private static IContainer Container { get; set; }
 

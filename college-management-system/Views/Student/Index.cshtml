@@ -2,7 +2,7 @@
 
 @{ ViewBag.Title = "Index"; }
 
-<h2>Students registered</h2>
+<h2><b>Students</b></h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -12,7 +12,7 @@
         <th>Name</th>
         <th class="text-center">Birthday</th>
         <th class="text-center">Registration Number</th>
-        <th class="text-center">Actions</th>
+        <th class="text-center">Operations</th>
     </tr>
 
     @foreach (var item in Model.Students)
@@ -28,11 +28,11 @@
                 @Html.DisplayFor(modelItem => item.RegistrationNumber)
             </td>
             <td class="col-md-2 text-center">
-                @Html.ActionLink("Enroll", "Create", "Enrollment", new { item.StudentId }, new { @class = "btn btn-default btn-action", title = "Enroll Student" })
+                @Html.ActionLink("Enroll", "Create", "Enrollment", new { item.StudentId }, new { @class = "btn btn-default btn-success", title = "Enroll Student" })
                 @Html.ActionLink("Edit", "Edit", new { item.StudentId }, new { @class = "btn btn-info btn-action", title = "Edit Student" })
                 @using (Html.BeginForm("Delete", "Student", FormMethod.Post, new { style = "display: inline" }))
                 {
-            <button type="submit" class="btn btn-primary btn-action" title="Delete Student" onclick="return confirm('Do you want to delete this record?')">
+            <button type="submit" class="btn btn-primary btn-danger" title="Delete Student" onclick="return confirm('Do you want to delete this registration?')">
                 Delete
             </button>
                                 <input type="hidden" name="StudentId" value="@item.StudentId" />                }

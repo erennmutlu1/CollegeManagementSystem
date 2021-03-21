@@ -51,7 +51,7 @@ namespace CollegeManagementSystem.Services
             }
             catch (Exception)
             {
-                throw new Exception("An error occurred when was trying to save the data");
+                throw new Exception("An error occurred while trying to save the data");
             }
         }
 
@@ -63,7 +63,7 @@ namespace CollegeManagementSystem.Services
             }
             catch (Exception)
             {
-                throw new Exception("An unexpected error occurred when was trying to remove this data");
+                throw new Exception("An unexpected error occurred while trying to remove this data");
             }
         }
     }

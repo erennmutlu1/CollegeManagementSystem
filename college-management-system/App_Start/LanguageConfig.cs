@@ -6,7 +6,7 @@ using System.Web.Routing;
 
 namespace CollegeManagementSystem
 {
-    public class CultureAwareControllerActivator : IControllerActivator
+    public class LanguageConfig : IControllerActivator
     {
         public IController Create(RequestContext requestContext, Type controllerType)
         {

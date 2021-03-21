@@ -9,9 +9,9 @@ using CollegeManagementSystem.ViewModels.Teacher;
 
 namespace CollegeManagementSystem
 {
-    public class MappingProfile : Profile
+    public class MapperConfig : Profile
     {
-        public MappingProfile()
+        public MapperConfig()
         {
             Mapper.CreateMap<Student, StudentViewModel>().ReverseMap();
             Mapper.CreateMap<Teacher, TeacherViewModel>().ReverseMap();

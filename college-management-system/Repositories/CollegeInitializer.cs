@@ -11,18 +11,18 @@ namespace CollegeManagementSystem.Repositories
         {
             var students = new List<Student>
             {
-            new Student{StudentId = 1, RegistrationNumber = 1000, Name = "John John Florence",Birthday = DateTime.Parse("2000-09-01")},
-            new Student{StudentId = 2, RegistrationNumber = 1002, Name = "Kolohe Andino",Birthday = DateTime.Parse("2000-09-01")},
-            new Student{StudentId = 3, RegistrationNumber = 1003, Name = "Gabriel Medina",Birthday = DateTime.Parse("2000-09-01")},
-            new Student{StudentId = 4, RegistrationNumber = 1004, Name = "Italo Ferreira",Birthday = DateTime.Parse("1998-09-01")},
-            new Student{StudentId = 5, RegistrationNumber = 1005, Name = "Filipe Toledo",Birthday = DateTime.Parse("1998-09-01")},
-            new Student{StudentId = 6, RegistrationNumber = 1006, Name = "Stephanie Gilmore",Birthday = DateTime.Parse("1998-09-01")},
-            new Student{StudentId = 7, RegistrationNumber = 1007, Name = "Sally Fitzgibbons",Birthday = DateTime.Parse("1998-09-01")},
-            new Student{StudentId = 8, RegistrationNumber = 1008, Name = "Tatiana Weston Webb",Birthday = DateTime.Parse("1995-02-15")},
-            new Student{StudentId = 9, RegistrationNumber = 1009, Name = "Lakey Peterson",Birthday = DateTime.Parse("1995-02-15")},
-            new Student{StudentId = 10, RegistrationNumber = 1010, Name = "Jordy Smith",Birthday = DateTime.Parse("1995-02-15")},
-            new Student{StudentId = 11, RegistrationNumber = 1011, Name = "Kanoa Igarashi",Birthday = DateTime.Parse("1995-02-15")},
-            new Student{StudentId = 12, RegistrationNumber = 1012, Name = "Devid Silva",Birthday = DateTime.Parse("1995-02-15")}
+            new Student{StudentId = 1, RegistrationNumber = 111, Name = "Alisch Carlmicheal",Birthday = DateTime.Parse("2000-09-01")},
+            new Student{StudentId = 2, RegistrationNumber = 112, Name = "Iron Barmen",Birthday = DateTime.Parse("2000-09-01")},
+            new Student{StudentId = 3, RegistrationNumber = 113, Name = "Isaac Newton",Birthday = DateTime.Parse("2000-09-01")},
+            new Student{StudentId = 4, RegistrationNumber = 114, Name = "Nicola Tesla",Birthday = DateTime.Parse("1998-09-01")},
+            new Student{StudentId = 5, RegistrationNumber = 115, Name = "Harry Kewell",Birthday = DateTime.Parse("1998-09-01")},
+            new Student{StudentId = 6, RegistrationNumber = 116, Name = "Xalo Hass",Birthday = DateTime.Parse("1998-09-01")},
+            new Student{StudentId = 7, RegistrationNumber = 117, Name = "Silvester Stone",Birthday = DateTime.Parse("1998-09-01")},
+            new Student{StudentId = 8, RegistrationNumber = 118, Name = "Alzace Happiness",Birthday = DateTime.Parse("1995-02-15")},
+            new Student{StudentId = 9, RegistrationNumber = 119, Name = "Zoyda Carlmicheal",Birthday = DateTime.Parse("1995-02-15")},
+            new Student{StudentId = 10, RegistrationNumber = 120, Name = "Rodin Mirann",Birthday = DateTime.Parse("1995-02-15")},
+            new Student{StudentId = 11, RegistrationNumber = 121, Name = "Denis Barran",Birthday = DateTime.Parse("1995-02-15")},
+            new Student{StudentId = 12, RegistrationNumber = 122, Name = "Nelson Mandela",Birthday = DateTime.Parse("1995-02-15")}
             };
 
             students.ForEach(s => context.Students.Add(s));
@@ -42,10 +42,10 @@ namespace CollegeManagementSystem.Repositories
 
             var courses = new List<Course>
             {
-                new Course{CourseId = 1050,Name = "System Information"},
-                new Course{CourseId = 4022,Name = "Computer Science"},
-                new Course{CourseId = 4041,Name = "Electrical Engineering"},
-                new Course{CourseId = 3141,Name = "Fine Arts"}
+                new Course{CourseId = 1207,Name = "Space Science"},
+                new Course{CourseId = 1412,Name = "Modern Arts"},
+                new Course{CourseId = 2584,Name = "Computer Science"},
+                new Course{CourseId = 4569,Name = "Medicine"}
             };
             courses.ForEach(s => context.Courses.Add(s));
             context.SaveChanges();

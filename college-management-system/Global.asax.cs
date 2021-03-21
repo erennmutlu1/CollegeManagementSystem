@@ -10,14 +10,14 @@ namespace CollegeManagementSystem
     {
         protected void Application_Start()
         {
-            ControllerBuilder.Current.SetControllerFactory(new DefaultControllerFactory(new CultureAwareControllerActivator()));
-            ModelBinders.Binders.Add(typeof(decimal), new DecimalModelBinder());
-            Mapper.Initialize(c => c.AddProfile<MappingProfile>());
+            ControllerBuilder.Current.SetControllerFactory(new DefaultControllerFactory(new LanguageConfig()));
+            ModelBinders.Binders.Add(typeof(decimal), new DecimalConfig());
+            Mapper.Initialize(c => c.AddProfile<MapperConfig>());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            IoCConfig.RegisterDependencies();
+            InverseConfig.RegisterDependencies();
         }
     }
 }
