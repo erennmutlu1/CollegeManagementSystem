@@ -30,7 +30,7 @@ namespace CollegeManagementSystem.Repositories
 
             var teachers = new List<Teacher>
             {
-                new Teacher{ TeacherId = 3563, Name = "Zerha Clonney", Salary = (decimal) 45000.00, Birthday = DateTime.Parse("1985-02-15")},
+                new Teacher{ TeacherId = 3563, Name = "Zerhaa Clonney", Salary = (decimal) 45000.00, Birthday = DateTime.Parse("1985-02-15")},
                 new Teacher{ TeacherId = 1250, Name = "Aghella Barmen", Salary = (decimal) 18600.00, Birthday = DateTime.Parse("1995-02-15") },
                 new Teacher{ TeacherId = 8771, Name = "Erry Carlmicheal", Salary = (decimal) 18000.00, Birthday = DateTime.Parse("1997-02-15") },
                 new Teacher{ TeacherId = 6302, Name = "Erssan Happinies", Salary = (decimal) 25000.00, Birthday = DateTime.Parse("1986-02-15") },
