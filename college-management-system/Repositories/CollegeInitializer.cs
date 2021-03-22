@@ -30,11 +30,11 @@ namespace CollegeManagementSystem.Repositories
 
             var teachers = new List<Teacher>
             {
-                new Teacher{ TeacherId = 3563, Name = "Joseff Climber", Salary = (decimal) 2500.00, Birthday = DateTime.Parse("1965-02-15")},
-                new Teacher{ TeacherId = 1250, Name = "Di Mateo", Salary = (decimal) 3500.00, Birthday = DateTime.Parse("1975-02-15") },
-                new Teacher{ TeacherId = 8771, Name = "DeLucca Fernandez", Salary = (decimal) 15000.00, Birthday = DateTime.Parse("1990-02-15") },
-                new Teacher{ TeacherId = 6302, Name = "Gilberto Gil", Salary = (decimal) 5000.00, Birthday = DateTime.Parse("1986-02-15") },
-                new Teacher{ TeacherId = 1153, Name = "Jimi Page", Salary = (decimal) 4500.00, Birthday = DateTime.Parse("1984-02-15") }
+                new Teacher{ TeacherId = 3563, Name = "Zerha Clonney", Salary = (decimal) 45000.00, Birthday = DateTime.Parse("1985-02-15")},
+                new Teacher{ TeacherId = 1250, Name = "Aghella Barmen", Salary = (decimal) 18600.00, Birthday = DateTime.Parse("1995-02-15") },
+                new Teacher{ TeacherId = 8771, Name = "Erry Carlmicheal", Salary = (decimal) 18000.00, Birthday = DateTime.Parse("1997-02-15") },
+                new Teacher{ TeacherId = 6302, Name = "Erssan Happinies", Salary = (decimal) 25000.00, Birthday = DateTime.Parse("1986-02-15") },
+                new Teacher{ TeacherId = 1153, Name = "Momoste Birchi", Salary = (decimal) 10000.00, Birthday = DateTime.Parse("1994-02-15") }
             };
 
             teachers.ForEach(t => context.Teachers.Add(t));
