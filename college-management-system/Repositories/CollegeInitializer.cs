@@ -45,7 +45,7 @@ namespace CollegeManagementSystem.Repositories
             var courses = new List<Course>
             {
                 new Course{CourseId = 1207,Name = "Space Science"},
-                new Course{CourseId = 1412,Name = "Modern Arts"},
+                new Course{CourseId = 1312,Name = "Modern Arts"},
                 new Course{CourseId = 2584,Name = "Computer Science"},
                 new Course{CourseId = 4569,Name = "Medicine"}
             };
