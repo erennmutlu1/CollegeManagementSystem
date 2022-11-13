@@ -20,7 +20,7 @@ namespace CollegeManagementSystem.Repositories
             new Student{StudentId = 7, RegistrationNumber = 117, Name = "Silvester Stone",Birthday = DateTime.Parse("1998-09-01")},
             new Student{StudentId = 8, RegistrationNumber = 118, Name = "Alzace Happiness",Birthday = DateTime.Parse("1995-02-15")},
             new Student{StudentId = 9, RegistrationNumber = 119, Name = "Zoyda Carlmicheal",Birthday = DateTime.Parse("1995-02-15")},
-            new Student{StudentId = 10, RegistrationNumber = 120, Name = "Rodin Mirann",Birthday = DateTime.Parse("1995-02-15")},
+            new Student{StudentId = 10, RegistrationNumber = 120, Name = "Roddin Mirann",Birthday = DateTime.Parse("1995-02-15")},
             new Student{StudentId = 11, RegistrationNumber = 121, Name = "Denis Barran",Birthday = DateTime.Parse("1995-02-15")},
             new Student{StudentId = 12, RegistrationNumber = 122, Name = "Nelson Mandela",Birthday = DateTime.Parse("1995-02-15")}
             };
