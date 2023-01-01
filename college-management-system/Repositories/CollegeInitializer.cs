@@ -34,6 +34,7 @@ namespace CollegeManagementSystem.Repositories
                 new Teacher{ TeacherId = 1250, Name = "Aghella Barmen", Salary = (decimal) 18600.00, Birthday = DateTime.Parse("1995-02-15") },
                 new Teacher{ TeacherId = 1207, Name = "Erry Carlmicheal", Salary = (decimal) 18000.00, Birthday = DateTime.Parse("1997-02-15") },
                 new Teacher{ TeacherId = 6302, Name = "Erssan Happinies", Salary = (decimal) 25000.00, Birthday = DateTime.Parse("1986-02-15") },
+                new Teacher{ TeacherId = 4502, Name = "Dennis Whitestone", Salary = (decimal) 25000.00, Birthday = DateTime.Parse("1996-05-15") },
                 new Teacher{ TeacherId = 1412, Name = "Chety Clooney", Salary = (decimal) 20000.00, Birthday = DateTime.Parse("1990-02-15") },
                 new Teacher{ TeacherId = 1153, Name = "Momoste Birchi", Salary = (decimal) 10000.00, Birthday = DateTime.Parse("1994-02-15") }
             };
